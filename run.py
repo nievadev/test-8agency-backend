@@ -11,7 +11,7 @@ dotenv.load_dotenv()
 
 app = Flask(__name__)
 
-app.config.from_object(config.DevelopmentConfig)
+app.config.from_object(config.Config)
 
 
 @app.after_request
